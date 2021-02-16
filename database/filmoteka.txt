@@ -1,0 +1,48 @@
+===Baza danych filmoteka
+
+== Struktura tabeli dla tabeli filmy
+
+|------
+|Kolumna|Typ|Null|Ustawienia domyślne
+|------
+|//**IDFilm**//|int(10)|Nie|
+|Tytul|text|Tak|NULL
+|Gatunek|text|Tak|NULL
+|RezyserID|int(10)|Tak|NULL
+|RecenzjaID|int(10)|Tak|NULL
+|Link|text|Tak|NULL
+== Zrzut danych tabeli filmy
+
+|1|Matrix|SF|1|1|NULL
+|2|Gwiezdne Wojny|SF|2|2|NULL
+|3|Indiana Jones i Ostatnia Krucjata|Przygodowy|3|3|NULL
+|4|Jurassic Park|Przygodowy|3|4|NULL
+== Struktura tabeli dla tabeli recenzje
+
+|------
+|Kolumna|Typ|Null|Ustawienia domyślne
+|------
+|//**IDRecenzja**//|int(10)|Nie|
+|Ocena|int(10)|Tak|NULL
+|Tresc|longtext|Tak|NULL
+|Recenzent|text|Tak|NULL
+== Zrzut danych tabeli recenzje
+
+|1|5|Dobry film|Jan Nowak
+|2|4|Klasyka gatunku|Jan Nowak
+|3|4|Ciekawy|Andrzej Kowalski
+|4|3|Dinozaury i ludzie|Andrzej Kowalski
+== Struktura tabeli dla tabeli rezyserzy
+
+|------
+|Kolumna|Typ|Null|Ustawienia domyślne
+|------
+|//**IDRezyser**//|int(10)|Nie|
+|Imie|text|Tak|NULL
+|Nazwisko|text|Tak|NULL
+== Zrzut danych tabeli rezyserzy
+
+|1|Andy|Wachowski
+|2|George|Lucas
+|3|Steven|Spielberg
+|4|Andrzej|Wajda

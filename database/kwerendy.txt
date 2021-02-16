@@ -1,0 +1,18 @@
+1. Zwrócenie tytułów filmów, dla których gatunek to SF,
+
+	- SELECT tytul FROM `filmy` WHERE `Gatunek` LIKE 'SF'
+
+
+2. Zwrócenie wszystkich tytułów filmów wraz z nazwiskami reżyserów
+
+	- SELECT Tytul,Nazwisko FROM `filmy`,`rezyserzy` WHERE RezyserID = IDRezyser
+
+
+3. Zwrócenie filmów, dla których ocena w recenzji jest równa 4,
+
+	- SELECT Tytul,Ocena FROM `filmy`,`recenzje` WHERE Ocena = 4 AND RecenzjaID = IDRecenzja
+
+
+4. Dodanie rekordu do tabeli rezyserzy z danymi: ID – 4, Andrzej Wajda.
+
+	- INSERT INTO `rezyserzy`(`IDRezyser`, `Imie`, `Nazwisko`) VALUES (4, 'Andrzej', 'Wajda')

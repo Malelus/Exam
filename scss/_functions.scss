@@ -1,0 +1,36 @@
+//=================//
+//===// Fonts //===//
+//=================//
+
+@function font($font-name) {
+  @return map-get($font, $font-name);
+}
+
+//==================//
+//===// Colors //===//
+//==================//
+
+@function color($color-name) {
+  @return map-get($color, $color-name);
+}
+
+//===================//
+//===// Timings //===//
+//===================//
+
+@function time($timing-name) {
+  @return map-get($time, $timing-name);
+}
+
+//==================//
+//===// Mixins //===//
+//==================//
+
+//===// Mouse hover //===//
+
+@mixin mouse-hover {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+}

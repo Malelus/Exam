@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Egzamin</title>
+  </head>
+  <body>
+    <div class="transition transition--active blur"></div>
+
+    <header>
+      <div class="logo">
+        <h1 class="logo__text">Filmy i aktorzy - projekt bazy danych</h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="left">
+        <h3 class="section__title">Autor</h3>
+        <p>Mateusz Narowski</p>
+      </section>
+
+      <section class="middle">
+        <img src="./database/structure.png" alt="filmoteka" class="middle__img" />
+      </section>
+
+      <section class="right">
+        <h3 class="section__title">Do pobrania</h3>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./database/kwerendy.txt" class="nav__link">Kwerendy</a>
+            </li>
+            <li class="nav__item">
+              <a href="./database/filmoteka.txt" class="nav__link">Eksport MySQL</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <h2 class="footer__text">
+        Egzamin E.14 Tworzenie aplikacji internetowych i baz danych oraz administrowanie bazami.
+      </h2>
+      <button class="btn btn--small btn--about show-popup" data-target="#about_page">
+        <i class="fas fa-info-circle btn btn--info btn--icon"></i> O stronie
+      </button>
+    </footer>
+
+    <div class="popup" id="about_page">
+      <div class="popup__overlay show-popup" data-target="#about_page"></div>
+      <div class="popup__inner">
+        <p class="popup__title">Egzamin e.14</p>
+        <p class="popup__text">
+          <i class="fas fa-info"></i> - Strona zrobiona z egzaminu e.14 (2016).
+        </p>
+        <p class="popup__text">
+          <i class="fab fa-github"></i> - Strona została umieszczona również na repozytorium
+          GitHub'a.<a
+            href="https://github.com/Malelus/Exam"
+            class="popup__link"
+            target="_blank"
+            title="github.com/Malelus/Exam"
+            ><i class="fas fa-external-link-alt"></i
+          ></a>
+        </p>
+        <p class="popup__subtitle">Autor: Mateusz Narowski</p>
+        <p class="popup__text"><i class="fas fa-circle popup__circle"></i> Klasa: 3Bi</p>
+        <p class="popup__text"><i class="fas fa-circle popup__circle"></i> Grupa: I</p>
+        <p class="popup__text"><i class="far fa-calendar-alt"></i> - 16.02.2021r.</p>
+        <span>
+          <button class="btn btn--big btn--about show-popup" data-target="#about_page">
+            <i class="fas fa-times btn btn--close btn--icon"></i> Zamknij
+          </button>
+        </span>
+      </div>
+    </div>
+
+    <script src="./addons/main.js"></script>
+  </body>
+</html>

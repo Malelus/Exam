@@ -1,0 +1,21 @@
+//==================================//
+//===// Page transition (Blur) //===//
+//==================================//
+
+.blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 101;
+  background: color(bg);
+  opacity: 0;
+  pointer-events: none;
+  transition: time(transition-time) ease-out;
+
+  &.transition--active {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
